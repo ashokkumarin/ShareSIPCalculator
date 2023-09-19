@@ -1,2 +1,3 @@
 sip_returns.csv
 src/__pycache__/*
+src/modules/__pycache__/*
