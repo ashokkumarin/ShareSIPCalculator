@@ -20,7 +20,7 @@ def calculate_sip_returns(symbol, start_date, sip_amount, months):
         
     current_price = share_price_fetcher.get_current_price()                 # Fetch the current price of the stock
     current_value = total_units_purchased * current_price                   # Calculate the current value of the investment
-    returns = (current_value - total_investment) / total_investment         # Calculate SIP returns
+    returns = ((current_value / total_investment) ** (1/(months/12))) - 1         # Calculate SIP returns
     
     #print(f"Total investment: {total_investment}, Total units purchased: {total_units_purchased}, Current price: {current_price}, Current value: {current_value}, Returns: {returns}")
 

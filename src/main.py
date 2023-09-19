@@ -47,14 +47,14 @@ def main():
             "Total Units Purchased": total_units_purchased,
             "Current Price": current_price,
             "Current Value": current_value,
-            "Absolute Returns": sip_returns
+            "Anualized Returns": sip_returns
         }
         
         all_results.append(result_dict)
     
     # Write the results to a CSV file
     with open("sip_returns.csv", mode="w", newline="") as csv_file:
-        fieldnames = ["Symbol", "Start Date", "SIP Amount", "Months", "Total Investment", "Total Units Purchased", "Current Price", "Current Value", "Absolute Returns"]
+        fieldnames = ["Symbol", "Start Date", "SIP Amount", "Months", "Total Investment", "Total Units Purchased", "Current Price", "Current Value", "Anualized Returns"]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         
         writer.writeheader()  # Write the header row

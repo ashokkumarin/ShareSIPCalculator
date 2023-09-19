@@ -71,9 +71,11 @@
         "JYOTHYLAB",
         "EIDPARRY",
         "FINPIPE",
-        "ARVIND"
+        "ARVIND",
+        "KTKBANK",
+        "SOUTHBANK"
     ],
-    "start_date": "2013-03-18",
+    "start_date": "2018-03-18",
     "sip_amount": 125000,
     "months": 60
   }
