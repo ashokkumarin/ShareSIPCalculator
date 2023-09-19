@@ -2,7 +2,7 @@ import yfinance as yf
 from datetime import date, timedelta, datetime
 
 # Define the NSE stock symbol you want to fetch data for
-nse_symbol = "VOLTAS"  # Replace with the symbol of the stock you want to fetch
+nse_symbol = "TVSMOTOR"  # Replace with the symbol of the stock you want to fetch
 start_date = "2022-09-19"  # Replace with the date you're interested in (YYYY-MM-DD format)
 end_date = (datetime.strptime(start_date, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
 

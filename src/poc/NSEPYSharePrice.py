@@ -2,7 +2,7 @@ from nsepy import get_history
 from datetime import date
 
 # Define the NSE stock symbol you want to fetch data for
-nse_symbol = "AAPL"  # Replace with the symbol of the stock you want to fetch
+nse_symbol = "TVSMOTOR"  # Replace with the symbol of the stock you want to fetch
 date_to_check = "2023-09-15"  # Replace with the date you're interested in (YYYY-MM-DD format)
 
 # Fetch current data
