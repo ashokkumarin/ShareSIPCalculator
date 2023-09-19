@@ -16,5 +16,7 @@ current_price = current_data["Close"].values[0]
 closing_price = historical_data['Close'].values[0]
 
 # Print the current price and the closing price for the specified date
+print("# # # # # # # # # # # # # # # # # # # #")
 print(f"Current price: {current_price}")
 print(f"Closing price for {date_to_check}: {closing_price}")
+print("# # # # # # # # # # # # # # # # # # # #")
