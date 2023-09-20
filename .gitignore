@@ -1,3 +1,6 @@
 sip_returns.csv
 src/__pycache__/*
 src/modules/__pycache__/*
+sip_returns_2013_to_2018.csv
+sip_returns_2018_to_2023.csv
+src/modules/__pycache__/share_price_fetcher.cpython-311.pyc
