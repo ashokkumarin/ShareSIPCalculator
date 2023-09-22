@@ -1,0 +1,11 @@
+{
+    "symbols": [
+        "HINDUNILVR",
+        "HDFCBANK"
+    ],
+    "start_date": "2018-03-18",
+    "sip_amount": 125000,
+    "months": 60,
+    "outputFile" : ".\\output\\sip_returns_2018_2023_HDFC_HUL.csv"
+  }
+  

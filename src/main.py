@@ -13,7 +13,7 @@ def read_config_from_file(config_file):
 
 def main():
     # Specify the path to your JSON config file
-    config_file = "config.json"
+    config_file = ".\config\config_test.json"
     
     # Read config data from the config file
     config_data = read_config_from_file(config_file)
@@ -26,6 +26,7 @@ def main():
     start_date = config_data.get("start_date", "")
     sip_amount = config_data.get("sip_amount", 0)
     months = config_data.get("months", 0)
+    outputFile = config_data.get("outputFile","")
     
     # Initialize a list to store results for all symbols
     all_results = []    
@@ -53,7 +54,7 @@ def main():
         all_results.append(result_dict)
     
     # Write the results to a CSV file
-    with open("sip_returns.csv", mode="w", newline="") as csv_file:
+    with open(outputFile, mode="w", newline="") as csv_file:
         fieldnames = ["Symbol", "Start Date", "SIP Amount", "Months", "Total Investment", "Total Units Purchased", "Current Price", "Current Value", "Anualized Returns"]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         
